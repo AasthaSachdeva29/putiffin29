@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
+const API_URL = import.meta.env.VITE_API_URL || "https://putiffin-production.up.railway.app";
 
 async function request(path: string, options: RequestInit = {}) {
   const token = localStorage.getItem("admin_token") || localStorage.getItem("user_token");
